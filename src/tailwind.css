@@ -566,3 +566,8 @@ h1 {
   font-size: 3.75rem;
   line-height: 1;
 }
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(255 87 34 / var(--tw-text-opacity));
+}

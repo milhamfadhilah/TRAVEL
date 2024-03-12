@@ -8,27 +8,59 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
 
     <!-- Tailwind Style -->
     <link rel="stylesheet" href="../src/tailwind.css" />
-  </head>
-  <body>
-    <nav class="py-9 px-4">
-      <div class="container mx-auto">
-        <div class="flex justify-between">
-          <img src="../public/asset/logo.svg" alt="logo" />
-          <img src="../public/asset/menu.svg" alt="menu" />
-        </div>
-      </div>
-      <div class="fixed bottom-0 right-0 left-0 p-4">
-        <ul>
-          <li><a href="">Home</a></li>
-        </ul>
-      </div>
-    </nav>
-  </body>
-</html>
+      </head>
+      <body>
+        <nav class="py-9 px-4">
+          <div class="container mx-auto">
+            <div class="flex justify-between">
+              <img src="../public/asset/logo.svg" alt="logo" />
+              <img src="../public/asset/menu.svg" alt="menu" />
+            </div>
+          </div>
+          <div class="fixed bottom-0 right-0 left-0 bg-white p-4 border">
+            <ul class="flex justify-between">
+                <li>
+                  <a href="" class="flex justify-center flex-col items-center gap-1">
+                    <ion-icon name="home" class="text-2xl text-ungu"></ion-icon>
+                    <span class="text-ungu text-base font-normal">Home</span>
+                  </a>
+              </li>
+              <li>
+                <a href="" class="flex justify-center flex-col items-center gap-1">
+                  <ion-icon name="albums" class=" text-grey opacity-50 text-2xl "></ion-icon>
+                  <span class="text-grey text-base font-normal">Discover</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex justify-center flex-col items-center gap-1">
+                  <ion-icon name="sparkles" class=" text-grey opacity-50 text-2xl "></ion-icon>
+                  <span class="text-grey text-base font-normal">Special Deals</span>
+                </a>
+              </li>
+              <li>
+              <a href="" class="flex justify-center flex-col items-center gap-1">
+                  <ion-icon name="documents" class=" text-grey opacity-50 text-2xl "></ion-icon>
+                  <span class="text-grey text-base font-normal">Contact</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex justify-center flex-col items-center gap-1">
+                  <ion-icon name="reorder-four" class=" text-grey opacity-50 text-2xl "></ion-icon>
+                  <span class="text-grey text-base font-normal">More</span>
+                </a>
+              </li>
+            </ul> 
+            <div class="absolute bottom-28">
+              <button>Login</button>
+              <button class="bg-ungu px-8 py-4">Sign Up</button>
+            </div>
+          </div>
+        </nav>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      </body>
+</html> 

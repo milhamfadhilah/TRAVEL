@@ -4,63 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRAVELKEUN</title>
-
+    <!-- Alpine JS -->
+    <script src="//unpkg.com/alpinejs" defer></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind Style -->
     <link rel="stylesheet" href="../src/tailwind.css" />
-      </head>
-      <body>
-        <nav class="py-9 px-4">
-          <div class="container mx-auto">
-            <div class="flex justify-between">
-              <img src="../public/asset/logo.svg" alt="logo" />
-              <img src="../public/asset/menu.svg" alt="menu" />
-            </div>
-          </div>
-          <div class="fixed bottom-0 right-0 left-0 bg-white p-4 border">
-            <ul class="flex justify-between">
-                <li>
-                  <a href="" class="flex justify-center flex-col items-center gap-1">
-                    <ion-icon name="home" class="text-2xl text-ungu"></ion-icon>
-                    <span class="text-ungu text-base font-normal">Home</span>
-                  </a>
-              </li>
-              <li>
-                <a href="" class="flex justify-center flex-col items-center gap-1">
-                  <ion-icon name="albums" class=" text-grey opacity-50 text-2xl "></ion-icon>
-                  <span class="text-grey text-base font-normal">Discover</span>
-                </a>
-              </li>
-              <li>
-                <a href="" class="flex justify-center flex-col items-center gap-1">
-                  <ion-icon name="sparkles" class=" text-grey opacity-50 text-2xl "></ion-icon>
-                  <span class="text-grey text-base font-normal">Special Deals</span>
-                </a>
-              </li>
-              <li>
-              <a href="" class="flex justify-center flex-col items-center gap-1">
-                  <ion-icon name="documents" class=" text-grey opacity-50 text-2xl "></ion-icon>
-                  <span class="text-grey text-base font-normal">Contact</span>
-                </a>
-              </li>
-              <li>
-                <a href="" class="flex justify-center flex-col items-center gap-1">
-                  <ion-icon name="reorder-four" class=" text-grey opacity-50 text-2xl "></ion-icon>
-                  <span class="text-grey text-base font-normal">More</span>
-                </a>
-              </li>
-            </ul> 
-            <div class="absolute bottom-28">
-              <button>Login</button>
-              <button class="bg-ungu px-8 py-4">Sign Up</button>
-            </div>
-          </div>
-        </nav>
+  </head>
+  <body>
+    <nav x-data="{navOpen:false}" class="py-9 px-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <img src="../public/asset/logo.svg" alt="logo" />
+          <img
+            @click="navOpen=!navOpen"
+            src="../public/asset/menu.svg"
+            alt="menu"
+          />
+        </div>
+      </div>
+      <div
+        x-show="navOpen"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        x-data="{open:false}"
+        class="fixed bottom-0 right-0 left-0 bg-white p-4 border"
+      >
+        <ul class="flex justify-between">
+          <li>
+            <a Button class="flex justify-center flex-col items-center gap-1">
+              <ion-icon name="home" class="text-2xl text-ungu"></ion-icon>
+              <span class="text-ungu text-base font-normal">Home</span>
+            </a>
+          </li>
+          <li>
+            <a Button class="flex justify-center flex-col items-center gap-1">
+              <ion-icon
+                name="albums"
+                class="text-grey opacity-50 text-2xl"
+              ></ion-icon>
+              <span class="text-grey text-base font-normal">Discover</span>
+            </a>
+          </li>
+          <li>
+            <a Button class="flex justify-center flex-col items-center gap-1">
+              <ion-icon
+                name="sparkles"
+                class="text-grey opacity-50 text-2xl"
+              ></ion-icon>
+              <span class="text-grey text-base font-normal">Special Deals</span>
+            </a>
+          </li>
+          <li>
+            <a Button class="flex justify-center flex-col items-center gap-1">
+              <ion-icon
+                name="documents"
+                class="text-grey opacity-50 text-2xl"
+              ></ion-icon>
+              <span class="text-grey text-base font-normal">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a
+              Button
+              @click="open= !open"
+              class="flex justify-center flex-col items-center gap-1"
+            >
+              <ion-icon
+                name="reorder-four"
+                class="text-grey opacity-50 text-2xl"
+              ></ion-icon>
+              <span class="text-grey text-base font-normal">More</span>
+            </a>
+          </li>
+        </ul>
+        <div
+          x-show="open"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="transition ease-in duration-300"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+          class="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-4 w-3/4"
+        >
+          <button
+            class="grow px-8 py-4 font-bold text-grey rounded-full text-sm"
+          >
+            Login
+          </button>
+          <button
+            class="grow bg-ungu px-8 py-4 font-bold text-white rounded-full text-sm"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      </body>
-</html> 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

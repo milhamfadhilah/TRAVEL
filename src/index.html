@@ -17,7 +17,10 @@
     <!-- Tailwind Style -->
     <link rel="stylesheet" href="../src/tailwind.css" />
   </head>
+
   <body>
+
+    <!-- Navigation -->
     <nav x-data="{navOpen:false}" class="py-9 px-4">
       <div class="container mx-auto">
 
@@ -136,6 +139,34 @@
       </div>
     </nav>
 
+      <!-- Hero Section -->
+      <section>
+        <div class="container bg-red-300 mx-auto p-4">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 lg:col-span-4 order-2">
+              <div>
+                <button>
+                  <span>
+                    Explore the world!
+                    <img src="../public/asset/icon/work.svg" alt="">
+                  </span>
+                </button>
+
+                <!-- ini adalah arbitary value -  -->
+                <h1 class="font-bold text-[40px] text-black- text-center">Travel <span class="text-pink">top destinaion</span> of the world</h1>
+
+              </div>
+            </div>
+            <div class="col-span-12 lg:col-span-8 order-1">
+                <div>
+                  <img src="../public/asset/hero.png" alt="">
+                </div>            
+            </div>
+          </div>
+
+        </div>
+      </section>
+    
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

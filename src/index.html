@@ -151,12 +151,12 @@
 
     <!-- Hero Section -->
     <section>
-      <div class="container mx-auto px-4 py-28">
-        <div class="grid grid-cols-12">
-          <div class="col-span-12 lg:col-span-4 order-2">
+      <div class="container mx-auto px-4 py-28 lg:py-16">
+        <div class="grid grid-cols-12 items-center">
+          <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
             <div>
               <button
-                class="px-8 py-4 bg-white text-pink flex gap-2 text-sm font-bold shadow-xl rounded-full mx-auto"
+                class="px-8 py-4 bg-white text-pink flex gap-2 text-sm font-bold shadow-xl rounded-full mx-auto lg:mx-0"
               >
                 Explore the world!
                 <img src="../public/asset/icon/work.svg" alt="" />
@@ -164,18 +164,22 @@
 
               <!-- ini adalah arbitary value -  -->
               <h1
-                class="mt-4 font-bold text-[40px] md:text-[52px] text-grey text-center leading-tight"
+                class="mt-4 mb-6 md:mt-[43px] font-bold text-[40px] md:text-[52px] lg:text-[69px] text-grey text-center lg:text-start leading-tight"
               >
                 Travel <span class="text-pink">top destination</span> of the
                 world
               </h1>
-              <p class="text-center text-grey opacity-50 font-inter">
+              <p
+                class="mb-8 text-center lg:text-start text-grey opacity-50 text-base md:mb-[43px] md:text-[18px] font-inter md:w-3/4 lg:w-full mx-auto"
+              >
                 We always make our customer happy by providing as many choices
                 as possible
               </p>
-              <div class="flex flex-col gap-6 mt-8">
+              <div
+                class="flex flex-col md:flex-row justify-center lg:justify-start gap-6 mt-8"
+              >
                 <buttton
-                  class="text-center shadow-2xl px-8 py-6 bg-ungu text-white rounded-full text-sm font-bold"
+                  class="text-center justify-center shadow-2xl px-8 py-6 bg-ungu text-white rounded-full text-sm font-bold"
                   >Get Started</buttton
                 >
                 <buttton
@@ -187,9 +191,9 @@
               </div>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-8 order-1">
+          <div class="col-span-12 lg:col-span-8 order-1 lg:order-2">
             <div>
-              <img src="../public/asset/hero.png" alt="" />
+              <img src="../public/asset/hero.png" class="w-full" alt="" />
             </div>
           </div>
         </div>

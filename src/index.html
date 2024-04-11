@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRAVELKEUN</title>
+    
     <!-- Alpine JS -->
     <script src="//unpkg.com/alpinejs" defer></script>
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" 
     />
 
     <!-- Tailwind Style -->
@@ -23,11 +25,13 @@
     <nav x-data="{navOpen:false}" class="py-9 px-4">
       <div class="container mx-auto">
         <div class="flex justify-between items-center">
+
           <img
             src="../public/asset/logo.svg"
             alt="logo"
             class="order-1 sm:order-2"
           />
+
           <img
             @click="navOpen=!navOpen"
             src="../public/asset/menu.svg"
@@ -162,7 +166,7 @@
                 <img src="../public/asset/icon/work.svg" alt="" />
               </button>
 
-              <!-- ini adalah arbitary value -  -->
+              <!-- ini adalah arbitary value -->
               <h1
                 class="mt-4 mb-6 md:mt-[43px] font-bold text-[40px] md:text-[52px] lg:text-[69px] text-grey text-center lg:text-start leading-tight"
               >
@@ -182,6 +186,7 @@
                   class="text-center justify-center shadow-2xl px-8 py-6 bg-ungu text-white rounded-full text-sm font-bold"
                   >Get Started</buttton
                 >
+                
                 <buttton
                   class="justify-center items-center z-10 flex gap-2 px-8 py-6 bg-white text-black border border-[#EEEEEE] rounded-full text-sm font-bold"
                 >
@@ -191,14 +196,48 @@
               </div>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-8 order-1 lg:order-2">
+          <div class="col-span-12 lg:col-span-8 
+            order-1 lg:order-2">
             <div>
               <img src="../public/asset/hero.png" class="w-full" alt="" />
             </div>
           </div>
+          <div class="col-span-12 order-3 py-8">
+            <div class="flex justify-center lg:justify-between gap-6 sm:gap-7 flex-wrap ">
+              <img src="../public/asset/logo/airbnb.svg" class="h-6 sm:gap-7" alt="">
+
+              <img src="../public/asset/logo/booking.svg" class="h-6 sm:gap-7" alt="">
+
+              <img src="../public/asset/logo/expedia.svg" class="h-6 sm:gap-7" alt="">
+
+              <img src="../public/asset/logo/rbitz.svg" class="h-6 sm:gap-7" alt="">
+
+              <img src="../public/asset/logo/tripadvisor.svg" class="h-6 sm:gap-7" alt="">
+            </div> 
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Service Section -->
+    <Section class="py-16">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-span-4 flex gap-4 flex-col">
+            <span class="text-pink font-bold lg:text-[23px] text-grey text-center lg:text-start leading-tight
+            leading-tight">
+              SERVICES
+            </span>
+            <h1 class="font-bold lg:text-[44px] text-5x1 leading-tight text-grey">Our top value <br>categories for you</h1>
+          </div>
+          <div class="col-span-8">
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
 
     <script
       type="module"

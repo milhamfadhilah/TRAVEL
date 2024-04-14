@@ -14,6 +14,6 @@ module.exports = {
         grey: "#222831",
       },
     },
-  },
+    },
   plugins: [],
 };
